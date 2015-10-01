@@ -30,7 +30,13 @@
   (= :foo (keyword "foo"))
 
   "Symbolism is all around us"
-  (= 'foo (symbol "foo"))
+  (= false (= "hello" :hello 'hello))
+
+  "Make a keyword with your keyboard"
+  (= :hello (keyword "hello"))
+
+  "Symbolism is all around us"
+  (= 'hello (symbol "hello"))
 
   "When things cannot be equal, they must be different"
   (not= :fill-in-the-blank 12))
