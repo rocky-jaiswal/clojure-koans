@@ -1,4 +1,4 @@
-(ns koans.22-meta
+(ns koans.23-meta
   (:require [koan-engine.core :refer :all]))
 
 (def giants
@@ -9,7 +9,7 @@
   "Some objects can be tagged using the with-meta function"
   (= __ (meta giants))
 
-  "Or more succintly with a reader macro"
+  "Or more succinctly with a reader macro"
   (= __ (meta '^{:division "West"} Giants))
 
   "While others can't"
